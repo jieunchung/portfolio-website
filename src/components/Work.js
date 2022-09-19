@@ -40,7 +40,7 @@ const Work = () => {
             <p className="leading-relaxed max-w-prose pb-4 text-sm">
               A minimal web app that allows users to get information regarding
               weather conditions around the world. The app also includes
-              animated icons and 7-day forecast. This is the first project I
+              animated icons and a 7-day forecast. This is the first project I
               built using React.
             </p>
 

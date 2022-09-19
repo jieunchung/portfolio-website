@@ -5,13 +5,13 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen flex py-28 items-center relative z-10 xl:min-h-screen flex-col md:flex-row bg-white"
+      className="w-full flex py-28 items-center relative z-10 xl:min-h-screen flex-col md:flex-row bg-white"
     >
       {/* container */}
-      <div className="mx-auto w-10/12 2xl:w-[80%]">
-        <div className="flex flex-col md:flex-row w-full">
+      <div className="mx-auto w-10/12 2xl:w-[80%] h-full">
+        <div className="flex flex-col md:flex-row w-full h-full">
           {/* item 1 */}
-          <div className="basis-1/2 pb-5 md:pr-20 md:self-center ml-auto xl:pl-20">
+          <div className="basis-1/2 pb-5 md:pr-20 md:self-center ml-0 xl:pl-20">
             <img
               src={forest}
               alt="jieun exploring the wilderness in washington state"
