@@ -19,10 +19,10 @@ const About = () => {
           </div>
           {/* item 2 */}
           <div className="basis-1/2 md:self-center ml-auto xl:pl-20">
-            <h3 className="font-bold text-2xl md:text-3xl lg:text-4xl uppercase mb-2">
+            <h3 className="font-semibold text-2xl md:text-3xl lg:text-4xl uppercase mb-2 font-[Poppins]">
               About
             </h3>
-            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6">
+            <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-6 font-[Poppins] text-[#304E5B]">
               A little introduction
             </h2>
             <p className="leading-relaxed max-w-prose text-sm lg:text-[1rem]">

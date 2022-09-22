@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="w-full h-[80px] fixed flex justify-between items-center px-14 bg-white z-20">
+    <div className="w-full h-[60px] fixed flex justify-between items-center px-14 bg-white z-20 text-[#304E5B]">
       {/* home */}
       <ul className="hover:cursor-pointer">
         <li className="text-xl">
@@ -74,7 +74,7 @@ const Navbar = () => {
 
       {/* social menu */}
       <div className="hidden fixed lg:flex right-8 bottom-0">
-        <ul className="flex flex-col items-center text-center text-lg after:block after:w-[1px] after:h-[200px] after:mx-0 after:my-auto after:bg-[#000000]">
+        <ul className="flex flex-col items-center text-center text-lg after:block after:w-[1px] after:h-[200px] after:mx-0 after:my-auto after:bg-[#304E5B] text-[#304E5B]">
           <li>
             <a
               href="https://www.linkedin.com/in/jieun-chung-82155924b/"
@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {/* skills menu */}
       <div className="hidden lg:flex left-8 fixed bottom-0">
-        <ul className="flex flex-col items-center text-xl text-center after:block after:w-[1px] after:h-[300px] after:mx-0 after:my-auto after:bg-[#000000]">
+        <ul className="flex flex-col items-center text-xl text-center after:block after:w-[1px] after:h-[300px] after:mx-0 after:my-auto after:bg-[#304E5B] text-[#304E5B]">
           <li>
             <DiReact className="mb-4 text-2xl hover:text-[#61DAFB]" />
           </li>

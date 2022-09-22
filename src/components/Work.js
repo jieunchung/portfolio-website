@@ -5,17 +5,17 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full flex flex-col items-center py-28 relative z-10 xl:min-h-screen md:flex-row bg-white"
+      className="w-full flex flex-col items-center py-28 relative z-10 xl:min-h-screen md:flex-row bg-[#DFE8F0]"
     >
       {/* container */}
       <div className="mx-auto w-[80%] 2xl:w-[80%]">
         {/* description */}
         <div className="h-full w-full">
           <div className="md:self-center ml-auto">
-            <h3 className="font-bold text-2xl lg:text-4xl uppercase mb-2">
+            <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 font-[Poppins]">
               Work
             </h3>
-            <h2 className="font-bold text-3xl lg:text-5xl mb-10">
+            <h2 className="font-bold text-3xl lg:text-5xl mb-10 font-[Poppins] text-[#304E5B]">
               Recent projects
             </h2>
           </div>

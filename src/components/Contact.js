@@ -13,10 +13,10 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row h-full w-full">
           {/* item */}
           <div className="basis-1/2 ms:pb-5 md:pr-20 md:self-center ml-auto xl:pl-20">
-            <h3 className="font-bold text-2xl lg:text-4xl uppercase mb-2">
+            <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 font-[Poppins]">
               Contact
             </h3>
-            <h2 className="font-bold text-3xl lg:text-5xl mb-6">
+            <h2 className="font-bold text-3xl lg:text-5xl mb-6 font-[Poppins] text-[#304E5B]">
               Keep in touch
             </h2>
             <p className="leading-relaxed mb-12 text-sm lg:text-[1rem]">
