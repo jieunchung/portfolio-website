@@ -94,7 +94,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="mailto:jieunchung@gmail.com">
+            <a href="mailto:jieunchung2@gmail.com">
               <AiOutlineMail className="mb-4 hover:text-[#CE483C]" />
             </a>
           </li>
