@@ -5,7 +5,7 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full flex flex-col items-center py-28 relative z-10 xl:min-h-screen md:flex-row bg-[#DFE8F0]"
+      className="w-full flex lg:flex-col items-center py-28 relative z-10 xl:min-h-screen flex-row bg-[#DFE8F0]"
     >
       {/* container */}
       <div className="mx-auto w-[80%] 2xl:w-[80%]">
@@ -15,88 +15,104 @@ const Work = () => {
             <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 font-[Poppins]">
               Work
             </h3>
-            <h2 className="font-bold text-3xl lg:text-5xl mb-10 font-[Poppins] text-[#304E5B]">
+            <h2 className="font-bold text-3xl lg:text-5xl mb-10 lg:mb-24 font-[Poppins] text-[#304E5B]">
               Recent projects
             </h2>
           </div>
         </div>
         {/* container for items */}
-        <div className="flex flex-col md:flex-row h-full w-full gap-2 md:gap-5 lg:gap-10">
+        <div className="flex flex-col lg:flex-row h-full w-full gap-2 md:gap-5 lg:gap-10">
           {/* item */}
-          <div className="basis-1/3 md:self-center ml-auto xl:p-20 p-4 border-2 border-[#fbfbfd] bg-[#fbfbfd] max-h-[380px] overflow-scroll">
+          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#fbfbfd] bg-[#fbfbfd] lg:max-w-[310px] lg:min-h-[310px] w-full overflow-scroll">
+            <a
+              href="https://ephemeral-lolly-e84e7e.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="lg:text-xl flex justify-end pb-2"
+            >
+              <MdOpenInNew />
+            </a>
+            <div className="flex flex-row items-center ml-auto">
+              <h2 className="font-bold lg:text-xl uppercase mb-8 basis-full">
+                Tenzies
+              </h2>
+            </div>
+            <p className="leading-relaxed max-w-prose pb-4 text-sm">
+              A fast-paced dice game, where you need to make all 10 dice the
+              same value.
+            </p>
+
+            <footer className="text-xs py-2 opacity-70">React CSS</footer>
+          </div>{" "}
+          {/* item */}
+          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#fbfbfd] bg-[#fbfbfd] lg:max-w-[310px] lg:min-h-[310px] w-full overflow-scroll">
+            <a
+              href="https://mellifluous-cajeta-05ad88.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="lg:text-xl flex justify-end pb-2"
+            >
+              <MdOpenInNew />
+            </a>
             <div className="flex flex-row items-center ml-auto">
               <h2 className="font-bold lg:text-xl uppercase mb-8 basis-full">
                 Weather?
               </h2>
-              <a
-                href="https://mellifluous-cajeta-05ad88.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="mb-8 lg:text-xl text-right"
-              >
-                <MdOpenInNew />
-              </a>
             </div>
             <p className="leading-relaxed max-w-prose pb-4 text-sm">
-              A minimal web app that allows users to get information regarding
-              weather conditions around the world. The app also includes
-              animated icons and a 7-day forecast. This is the first project I
-              built using React.
+              A minimal weather app that provides information regarding weather
+              conditions around the world.
             </p>
 
             <footer className="text-xs py-2 opacity-70">
-              #React #Bootstrap #API
+              React Bootstrap API
             </footer>
           </div>
           {/* item */}
-          <div className="basis-1/3 md:self-center ml-auto xl:p-20 p-4 border-2 border-[#FBFBFD] bg-[#FBFBFD] max-h-[380px] overflow-scroll">
+          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#FBFBFD] bg-[#FBFBFD] lg:max-w-[310px] lg:min-h-[310px] w-full overflow-scroll">
+            <a
+              href="https://superb-crostata-920b96.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="lg:text-xl flex justify-end pb-2"
+            >
+              <MdOpenInNew />
+            </a>
             <div className="flex flex-row items-center ml-auto">
               <h2 className="font-bold lg:text-xl uppercase mb-8 basis-full">
                 /Find
               </h2>
-              <a
-                href="https://superb-crostata-920b96.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="mb-8 lg:text-xl text-right"
-              >
-                <MdOpenInNew />
-              </a>
             </div>
             <p className="leading-relaxed max-w-prose pb-4 text-sm">
-              A helpful tool to help you understand the meaning of a word.
-              Included are definitions, synonyms, pronunciations, sentences, and
-              pictures to aid you to use the words correctly. Name inspired by
-              Maplestory.
+              A simple dictionary app that includes definitions, synonyms,
+              pronunciations, sentences, and pictures.
             </p>
 
             <footer className="text-xs py-2 opacity-70">
-              #React #Bootstrap #API
+              React Bootstrap API
             </footer>
           </div>
-
           {/* item */}
-          <div className="basis-1/3 md:self-center ml-auto xl:p-20 p-4 border-2 border-[#FBFBFD] bg-[#FBFBFD] max-h-[380px] overflow-scroll">
+          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#FBFBFD] bg-[#FBFBFD] lg:max-w-[310px] w-full lg:min-h-[310px] overflow-scroll">
+            <a
+              href="https://warm-flan-da771a.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="lg:text-xl flex justify-end pb-2"
+            >
+              <MdOpenInNew />
+            </a>
             <div className="flex flex-row items-center ml-auto">
               <h2 className="font-bold lg:text-xl uppercase mb-8 basis-full">
-                Cheatsheet
+                Meme Generator
               </h2>
-              <a
-                href="https://euphonious-cassata-2254d8.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="mb-8 lg:text-xl text-right"
-              >
-                <MdOpenInNew />
-              </a>
             </div>
             <p className="leading-relaxed max-w-prose pb-4 text-sm">
-              Having struggled to remember everything while learning how to
-              code, I made a cheatsheet that contains helpful information that
-              can be used as a study guide for aspiring front end developers.
+              A web application that allows users to quickly and easily generate
+              custom memes.
             </p>
             <footer className="text-xs py-2 opacity-70">
-              #HTML #CSS #Prismjs
+              React API Tailwind
             </footer>
           </div>
         </div>
