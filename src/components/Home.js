@@ -12,7 +12,7 @@ const Home = () => {
       }}
     >
       <div className="mx-auto w-10/12 2xl:w-[80%]">
-        <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight md:leading-tight lg:leading-tight text-center font-[Poppins] text-[#304E5B]">
+        <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight md:leading-tight lg:leading-tight text-center font-[Poppins] text-[#304E5B] fa-beat">
           Frontend <br />
           Programming <br />
           Enthusiast.
