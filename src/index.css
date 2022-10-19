@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
 
-.fa-beat {
-  --fa-animation-iteration-count: 1;
-  --fa-animation-duration: 3s;
-  --fa-beat-scale: 1.02;
+.VollkornSC {
+  font-family: "Vollkorn SC";
 }

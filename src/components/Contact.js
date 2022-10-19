@@ -6,22 +6,22 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full flex flex-col py-28 items-center relative z-10 xl:min-h-screen md:flex-row bg-white"
+      className="w-full flex flex-col py-28 items-center relative z-10 xl:min-h-screen md:flex-row bg-white font-[Vollkorn] "
     >
       {/* container */}
       <div className="mx-auto w-10/12 2xl:w-[80%] h-full">
         <div className="flex flex-col md:flex-row h-full w-full">
           {/* item */}
-          <div className="basis-1/2 ms:pb-5 md:pr-20 md:self-center ml-auto xl:pl-20">
-            <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 font-[Poppins]">
+          <div className="basis-1/2 ms:pb-5 md:pr-20 md:self-center mx-auto xl:pl-20">
+            <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 VollkornSC">
               Contact
             </h3>
-            <h2 className="font-bold text-3xl lg:text-5xl mb-6 font-[Poppins] text-[#304E5B]">
-              Keep in touch
+            <h2 className="font-bold text-3xl lg:text-5xl mb-6 VollkornSC ">
+              keep in touch
             </h2>
             <p className="leading-relaxed mb-12 text-sm lg:text-[1rem]">
-              I am currently looking for a new job opportunity. Ask for my
-              resume or come say hi! I'd love to hear from you.
+              I am currently looking for a new job opportunity. <br />
+              Ask for my resume or come say hi! I'd love to hear from you.
             </p>
             {/* form */}
             <form

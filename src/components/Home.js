@@ -1,22 +1,27 @@
 import React from "react";
-import texture from "../assets/texture.jpg";
+import logo from "../assets/logo.png";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen sticky top-0 flex justify-center items-center bg-cover bg-center"
-      style={{
-        backgroundImage: `url(${texture})`,
-        backgroundRepeat: "no-repeat",
-      }}
+      className="w-full h-screen sticky top-0 flex justify-center items-center"
     >
-      <div className="mx-auto w-10/12 2xl:w-[80%]">
-        <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight md:leading-tight lg:leading-tight text-center font-[Poppins] text-[#304E5B] fa-beat">
-          Frontend <br />
-          Programming <br />
-          Enthusiast.
-        </h1>
+      <div className="mx-auto w-10/12 2xl:w-[80%] font-[Vollkorn] flex flex-col justify-center items-center">
+        <img
+          src={logo}
+          alt="logo for my homepage that says my name (jieun chung) and an icon of a lightbulb. the lightbulb has a cog as the bulb"
+        />
+        <h3 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-tight lg:leading-tight text-center">
+          <Typewriter
+            options={{
+              strings: ["frontend developer"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h3>
       </div>
     </div>
   );

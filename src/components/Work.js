@@ -5,18 +5,18 @@ const Work = () => {
   return (
     <div
       name="work"
-      className="w-full flex lg:flex-col items-center py-28 relative z-10 xl:min-h-screen flex-row bg-[#DFE8F0]"
+      className="w-full flex lg:flex-col items-center py-28 relative z-10 xl:min-h-screen flex-row bg-white font-[Vollkorn]"
     >
       {/* container */}
       <div className="mx-auto w-[80%] 2xl:w-[80%]">
         {/* description */}
         <div className="h-full w-full">
-          <div className="md:self-center ml-auto">
-            <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 font-[Poppins]">
+          <div className="md:self-center mx-auto">
+            <h3 className="font-semibold text-2xl lg:text-4xl uppercase mb-2 VollkornSC">
               Work
             </h3>
-            <h2 className="font-bold text-3xl lg:text-5xl mb-10 lg:mb-24 font-[Poppins] text-[#304E5B]">
-              Recent projects
+            <h2 className="font-bold text-3xl lg:text-5xl mb-10 lg:mb-24 VollkornSC">
+              recent projects
             </h2>
           </div>
         </div>
@@ -32,12 +32,12 @@ const Work = () => {
             >
               <MdOpenInNew />
             </a>
-            <div className="flex flex-row items-center ml-auto">
-              <h2 className="font-bold lg:text-xl uppercase mb-8 basis-full">
+            <div className="flex flex-row items-center ml-auto ">
+              <h2 className="font-bold lg:text-xl uppercase mb-8 basis-full ">
                 Tenzies
               </h2>
             </div>
-            <p className="leading-relaxed max-w-prose pb-4 text-sm">
+            <p className="leading-relaxed max-w-prose pb-4 text-sm ">
               A fast-paced dice game, where you need to make all 10 dice the
               same value.
             </p>
@@ -69,7 +69,7 @@ const Work = () => {
             </footer>
           </div>
           {/* item */}
-          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#FBFBFD] bg-[#FBFBFD] lg:max-w-[310px] lg:min-h-[310px] w-full overflow-scroll">
+          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#fbfbfd] bg-[#fbfbfd] lg:max-w-[310px] lg:min-h-[310px] w-full overflow-scroll">
             <a
               href="https://superb-crostata-920b96.netlify.app/"
               target="_blank"
@@ -93,7 +93,7 @@ const Work = () => {
             </footer>
           </div>
           {/* item */}
-          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#FBFBFD] bg-[#FBFBFD] lg:max-w-[310px] w-full lg:min-h-[310px] overflow-scroll">
+          <div className="basis-1/3 md:self-center ml-auto xl:p-10 p-4 border-2 border-[#fbfbfd] bg-[#fbfbfd] lg:max-w-[310px] w-full lg:min-h-[310px] overflow-scroll">
             <a
               href="https://warm-flan-da771a.netlify.app/"
               target="_blank"
