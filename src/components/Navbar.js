@@ -4,15 +4,19 @@ import { RiLinkedinLine } from "react-icons/ri";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const closeNav = () => setNav(!nav);
 
   return (
-    <div className="w-full h-[60px] fixed flex justify-between items-center px-14 bg-white z-20 VollkornSC ">
+    <div
+      className={`w-full h-[60px] fixed flex justify-between items-center px-14 bg-white ${
+        props.darkMode && "bg-[#222222]"
+      } z-20 VollkornSC`}
+    >
       {/* home */}
-      <ul className="hover:cursor-pointer">
+      <ul className="hover:cursor-pointer ">
         <li className="uppercase text-sm">
           <a href="/">jieunchung</a>
         </li>
@@ -47,7 +51,9 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "w-full h-screen absolute top-0 left-0 flex flex-col justify-center items-center bg-white uppercase"
+            : `w-full h-screen absolute top-0 left-0 flex flex-col justify-center items-center bg-white ${
+                props.darkMode && "bg-[#222222]"
+              } uppercase`
         }
       >
         <li className="py-6 text-4xl hover:cursor-pointer">
@@ -91,7 +97,7 @@ const Navbar = () => {
       </ul>
 
       {/* social menu */}
-      <div className="hidden fixed lg:flex right-8 bottom-0">
+      <div className="hidden fixed lg:flex right-2 xl:right-4 2xl:right-8 bottom-0">
         <ul className="flex flex-row items-center text-center text-xl">
           <li className="mx-2">
             <a
