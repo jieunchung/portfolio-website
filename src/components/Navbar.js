@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const closeNav = () => setNav(!nav);
 
   return (
     <div className="w-full h-[60px] fixed flex justify-between items-center px-14 bg-white z-20 VollkornSC ">
@@ -50,20 +51,43 @@ const Navbar = () => {
         }
       >
         <li className="py-6 text-4xl hover:cursor-pointer">
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500} onClick={closeNav}>
             about
           </Link>
         </li>
         <li className="py-6 text-4xl hover:cursor-pointer">
-          <Link to="work" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500} onClick={closeNav}>
             work
           </Link>
         </li>
         <li className="py-6 text-4xl hover:cursor-pointer">
-          <Link to="contact" smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500} onClick={closeNav}>
             contact
           </Link>
         </li>
+        <ul className="flex">
+          <li className="py-6 px-2 text-4xl hover:cursor-pointer">
+            <a
+              href="https://github.com/jieunchung"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className=" hover:text-[#420094]" onClick={closeNav} />
+            </a>
+          </li>
+          <li className="py-6 px-2 text-4xl hover:cursor-pointer">
+            <a
+              href="https://www.linkedin.com/in/jieun-chung-82155924b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin
+                className=" hover:text-[#0D62BC]"
+                onClick={closeNav}
+              />
+            </a>
+          </li>
+        </ul>
       </ul>
 
       {/* social menu */}
