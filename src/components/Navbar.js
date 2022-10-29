@@ -18,7 +18,9 @@ const Navbar = (props) => {
       {/* home */}
       <ul className="hover:cursor-pointer ">
         <li className="uppercase text-sm">
-          <a href="/">jieunchung</a>
+          <a href="/" className="font-bold">
+            JC
+          </a>
         </li>
       </ul>
 
