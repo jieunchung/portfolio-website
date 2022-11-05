@@ -1,5 +1,6 @@
 import React from "react";
 import { MdOpenInNew } from "react-icons/md";
+import { Fade } from "react-awesome-reveal";
 
 const Work = (props) => {
   const Works = [
@@ -9,6 +10,13 @@ const Work = (props) => {
       description:
         "A fast-paced dice game, where you need to make all 10 dice the same value.",
       technologies: "React CSS",
+    },
+    {
+      title: "Pokédex",
+      url: "https://dreamy-donut-71e8d8.netlify.app/",
+      description:
+        "Retrieve data about your favorite generation 1 Pokémon. All 151 Pokémon are included, from Bulbasaur to Mew.",
+      technologies: "React API CSS",
     },
     {
       title: "Weather?",
@@ -44,44 +52,49 @@ const Work = (props) => {
         {/* description */}
         <div className="h-full w-full">
           <div className="md:self-center mx-auto">
-            <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl 2xl:text-4xl uppercase mb-2 VollkornSC">
-              Work
-            </h3>
-            <h2 className="font-bold text-3xl md:text-2xl lg:text-3xl 2xl:text-5xl lg:mb-24 2xl:mb-32 VollkornSC">
-              recent projects
-            </h2>
+            <Fade cascade damping={0.3} triggerOnce={true}>
+              <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl 2xl:text-4xl uppercase mb-2 VollkornSC">
+                Work
+              </h3>
+              <h2 className="font-bold text-3xl md:text-2xl lg:text-3xl 2xl:text-5xl mb-10 lg:mb-20 2xl:mb-24 VollkornSC">
+                recent projects
+              </h2>
+            </Fade>
           </div>
         </div>
         {/* works */}
-        <ul className="w-10/12 2xl:w-[80%] mx-auto border-[transparent] flex flex-col lg:flex-row lg:min-h-[30vh] justify-center gap-2 font-[Vollkorn] flex-wrap">
-          {Works.map((work, index) => {
-            return (
-              <li
-                key={index}
-                className={`flex flex-col border-[#fbfbfd] flex-1 m-4 bg-[#fbfbfd] ${
-                  props.darkMode && "bg-[#2a2a2a] border-[#2a2a2a]"
-                } min-h-[10rem]`}
-              >
-                <a
-                  className="flex justify-end m-4 text-xl"
-                  href={work.url}
-                  target="_blank"
+        <Fade cascade damping={0.2} direction="up" triggerOnce={true}>
+          <ul className="w-10/12 2xl:w-[80%] mx-auto border-[transparent] grid grid-cols-1 xl:grid-cols-3 justify-center gap-2 font-[Vollkorn] flex-wrap">
+            {Works.map((work, index) => {
+              return (
+                <li
+                  key={index}
+                  className={`flex flex-col border-[#fbfbfd] flex-1 m-4 bg-[#fbfbfd] ${
+                    props.darkMode && "bg-[#2a2a2a] border-[#2a2a2a]"
+                  } min-h-[10rem]`}
                 >
-                  <MdOpenInNew />
-                </a>
-                <h4 className="flex-1 text-center text-xl 2xl:text-2xl VollkornSC my-2 lowercase">
-                  {work.title}
-                </h4>
-                <p className="flex-1 flex items-center justify-center text-[0.9rem] 2xl:text-[1rem] mx-4 lg:mx-1 text-center xl:text-center">
-                  {work.description}
-                </p>
-                <footer className="flex-1 flex items-end justify-center mx-4 text-[0.75rem] xl:text-[0.85rem] opacity-[75%] my-4">
-                  {work.technologies}
-                </footer>
-              </li>
-            );
-          })}
-        </ul>
+                  <a
+                    className="flex justify-end m-4 text-xl pt-2 xl:pt-4"
+                    href={work.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <MdOpenInNew />
+                  </a>
+                  <h4 className="flex-1 px-10 xl:py-2 text-xl 2xl:text-2xl VollkornSC my-2 lowercase">
+                    {work.title}
+                  </h4>
+                  <p className="flex-1 px-10 flex items-center justify-center text-[0.8rem] 2xl:text-[0.9rem]">
+                    {work.description}
+                  </p>
+                  <footer className="flex-1 px-10 pb-2 xl:pb-4 flex items-end text-[0.7rem] xl:text-[0.8rem] opacity-[75%] my-4">
+                    {work.technologies}
+                  </footer>
+                </li>
+              );
+            })}
+          </ul>
+        </Fade>
       </div>
     </div>
   );
