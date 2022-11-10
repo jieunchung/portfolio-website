@@ -64,7 +64,7 @@ const Work = (props) => {
         </div>
         {/* works */}
         <Fade cascade damping={0.2} direction="up" triggerOnce={true}>
-          <ul className="w-10/12 2xl:w-[80%] mx-auto border-[transparent] grid grid-cols-1 xl:grid-cols-3 justify-center gap-2 font-[Vollkorn] flex-wrap">
+          <ul className="w-full xl:w-10/12 2xl:w-[80%] mx-auto border-[transparent] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-2 font-[Vollkorn]">
             {Works.map((work, index) => {
               return (
                 <li
@@ -74,20 +74,20 @@ const Work = (props) => {
                   } min-h-[10rem]`}
                 >
                   <a
-                    className="flex justify-end m-4 text-xl pt-2 xl:pt-4"
+                    className="flex justify-end m-4 text-md md:text-xl pt-2 xl:pt-4"
                     href={work.url}
                     target="_blank"
                     rel="noreferrer"
                   >
                     <MdOpenInNew />
                   </a>
-                  <h4 className="flex-1 px-10 xl:py-2 text-xl 2xl:text-2xl VollkornSC my-2 lowercase">
+                  <h4 className="flex-1 px-4 md:px-10 xl:py-2 flex items-center justify-center text-center text-[1.2rem] xl:text-xl 2xl:text-2xl VollkornSC my-2 lowercase">
                     {work.title}
                   </h4>
-                  <p className="flex-1 px-10 flex items-center justify-center text-[0.8rem] 2xl:text-[0.9rem]">
+                  <p className="flex-1 px-4 text-center sm:px-10 flex items-center justify-center text-[0.8rem] lg:text-[0.85rem] 2xl:text-[0.9rem]">
                     {work.description}
                   </p>
-                  <footer className="flex-1 px-10 pb-2 xl:pb-4 flex items-end text-[0.7rem] xl:text-[0.8rem] opacity-[75%] my-4">
+                  <footer className="flex-1 px-4 md:px-10 py-2 flex items-center justify-center xl:py-4 text-[0.7rem] lg:text-[0.75rem] xl:text-[0.8rem] opacity-[75%] my-4">
                     {work.technologies}
                   </footer>
                 </li>

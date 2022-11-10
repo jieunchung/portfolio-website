@@ -8,7 +8,7 @@ const About = (props) => {
       name="about"
       className={`w-full flex py-28 items-center relative z-10 xl:min-h-screen flex-col md:flex-row bg-[#fbfbfd] ${
         props.darkMode && "bg-[#2A2A2A]"
-      } overflow-scroll`}
+      }`}
     >
       {/* container */}
       <Fade triggerOnce={true}>
