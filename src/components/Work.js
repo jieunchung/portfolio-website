@@ -39,6 +39,13 @@ const Work = (props) => {
         "A web application that allows users to quickly and easily generate custom memes.",
       technologies: "React API Tailwind",
     },
+    {
+      title: "Notes",
+      url: "https://startling-pithivier-1c6da0.netlify.app/",
+      description:
+        "Remembering can be difficult in a busy daily life. This app is desgined to help you record your thoughts, and to create to-do lists.",
+      technologies: "React CSS",
+    },
   ];
   return (
     <div
