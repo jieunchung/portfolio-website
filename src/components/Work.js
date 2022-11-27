@@ -9,42 +9,49 @@ const Work = (props) => {
       url: "https://ephemeral-lolly-e84e7e.netlify.app/",
       description:
         "A fast-paced dice game, where you need to make all 10 dice the same value.",
-      technologies: "React CSS",
+      technologies: "React JS CSS",
     },
     {
       title: "Pokédex",
       url: "https://dreamy-donut-71e8d8.netlify.app/",
       description:
         "Retrieve data about your favorite generation 1 Pokémon. All 151 Pokémon are included, from Bulbasaur to Mew.",
-      technologies: "React API CSS",
+      technologies: "React JS API CSS",
     },
     {
-      title: "Weather?",
-      url: "https://mellifluous-cajeta-05ad88.netlify.app/",
+      title: "Todo",
+      url: "https://sweet-chaja-fc6f41.netlify.app/",
       description:
-        "A minimal weather app that provides information regarding weather conditions around the world.",
-      technologies: "React Bootstrap API",
-    },
-    {
-      title: "/Find",
-      url: "https://superb-crostata-920b96.netlify.app/",
-      description:
-        "An English dictionary app with definitions, synonyms, pronunciations, sentences, and pictures.",
-      technologies: "React Bootstrap API",
-    },
-    {
-      title: "Meme Generator",
-      url: "https://warm-flan-da771a.netlify.app/",
-      description:
-        "A web application that allows users to quickly and easily generate custom memes.",
-      technologies: "React API Tailwind",
+        "Increase your productivity with todo. Create and edit your tasks, organize them by 'dragging & dropping' the task, and mark them as complete.",
+      technologies: "React TS CSS",
     },
     {
       title: "Notes",
       url: "https://startling-pithivier-1c6da0.netlify.app/",
       description:
         "Remembering can be difficult in a busy daily life. This app is desgined to help you record your thoughts, and to create to-do lists.",
-      technologies: "React CSS",
+      technologies: "React JS CSS",
+    },
+    {
+      title: "Weather?",
+      url: "https://mellifluous-cajeta-05ad88.netlify.app/",
+      description:
+        "A minimal weather app that provides information regarding weather conditions around the world.",
+      technologies: "React JS Bootstrap API",
+    },
+    {
+      title: "/Find",
+      url: "https://superb-crostata-920b96.netlify.app/",
+      description:
+        "An English dictionary app with definitions, synonyms, pronunciations, sentences, and pictures.",
+      technologies: "React JS Bootstrap API",
+    },
+    {
+      title: "Meme Generator",
+      url: "https://warm-flan-da771a.netlify.app/",
+      description:
+        "A web application that allows users to quickly and easily generate custom memes.",
+      technologies: "React JS API Tailwind",
     },
   ];
   return (
@@ -71,7 +78,7 @@ const Work = (props) => {
         </div>
         {/* works */}
         <Fade cascade damping={0.2} direction="up" triggerOnce={true}>
-          <ul className="w-full xl:w-10/12 2xl:w-[80%] mx-auto border-[transparent] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center gap-2 font-[Vollkorn]">
+          <ul className="w-full xl:w-10/12 2xl:w-[80%] mx-auto border-[transparent] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-center gap-2 font-[Vollkorn]">
             {Works.map((work, index) => {
               return (
                 <li

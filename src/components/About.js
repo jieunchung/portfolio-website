@@ -50,17 +50,14 @@ const About = (props) => {
                 <p className="pb-2 text-sm">
                   Some of the technologies I've been using recently:
                 </p>
-                <ul className="flex flex-row ml-3 2xl:py-1 list-disc text-sm">
+                <ul className="grid grid-cols-[100px_100px] ml-4 text-sm list-disc">
                   <li className="w-[7rem]">HTML</li>
                   <li className="w-[7rem]">CSS</li>
-                </ul>
-                <ul className="flex flex-row ml-3 2xl:py-1 list-disc text-sm">
                   <li className="w-[7rem]">Javascript</li>
+                  <li className="w-[7rem]">Typescript</li>
                   <li className="w-[7rem]">React</li>
-                </ul>
-                <ul className="flex flex-row ml-3 2xl:py-1 list-disc text-sm">
-                  <li className="w-[7rem]">Bootstrap</li>
                   <li className="w-[7rem]">Tailwind</li>
+                  <li className="w-[7rem]">Bootstrap</li>
                 </ul>
               </div>
             </div>
