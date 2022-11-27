@@ -10,55 +10,55 @@ const Navbar = (props) => {
   const closeNav = () => setNav(!nav);
 
   return (
-    <div
+    <section
       className={`w-full h-[60px] fixed flex justify-between items-center px-14 bg-white ${
         props.darkMode && "bg-[#222222]"
       } z-20 VollkornSC`}
     >
       {/* home */}
-      <Fade cascade damping={0.5} triggerOnce={true} direction="down">
-        <ul className="hover:cursor-pointer ">
-          <li className="uppercase text-sm">
-            <a href="/" className="font-bold">
-              JC
-            </a>
-          </li>
-        </ul>
+      <nav className="flex w-[95vw] items-center justify-between">
+        <Fade cascade damping={0.5} triggerOnce={true} direction="down">
+          <a
+            href="/"
+            className="hover:cursor-pointer uppercase text-sm font-bold"
+          >
+            JC
+          </a>
 
-        {/* menu */}
-        <ul className="hidden md:flex uppercase hover:cursor-pointer">
-          <li className="px-2 text-xs">
-            <Link to="about" smooth={true} duration={500}>
-              about
-            </Link>
-          </li>
-          <li className="px-2 text-xs">
-            <Link to="work" smooth={true} duration={500}>
-              work
-            </Link>
-          </li>
-          <li className="px-2 text-xs">
-            <Link to="contact" smooth={true} duration={500}>
-              contact
-            </Link>
-          </li>
-        </ul>
-      </Fade>
+          {/* menu */}
+          <ul className="hidden md:flex uppercase hover:cursor-pointer">
+            <li className="px-2 text-xs">
+              <Link to="about" smooth={true} duration={500}>
+                about
+              </Link>
+            </li>
+            <li className="px-2 text-xs">
+              <Link to="work" smooth={true} duration={500}>
+                work
+              </Link>
+            </li>
+            <li className="px-2 text-xs">
+              <Link to="contact" smooth={true} duration={500}>
+                contact
+              </Link>
+            </li>
+          </ul>
+        </Fade>
+      </nav>
 
       {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-20">
+      <nav onClick={handleClick} className="md:hidden z-20">
         {!nav ? <FaBars /> : <FaTimes />}
-      </div>
+      </nav>
 
       {/* mobile menu */}
-
-      <ul
+      <nav
         className={
           !nav
             ? "hidden"
             : `w-full h-screen absolute top-0 left-0 flex flex-col justify-center items-center bg-white ${
                 props.darkMode && "bg-[#222222]"
-              } uppercase`
+              } uppercase list-none`
         }
       >
         <Fade cascade damping={0.3} triggerOnce={true} direction="down">
@@ -112,10 +112,10 @@ const Navbar = (props) => {
             </li>
           </Fade>
         </ul>
-      </ul>
+      </nav>
 
       {/* social menu */}
-      <div className="hidden fixed lg:flex right-2 xl:right-4 2xl:right-8 bottom-0">
+      <aside className="hidden fixed lg:flex right-2 xl:right-4 2xl:right-8 bottom-0">
         <Fade
           delay={2400}
           cascade
@@ -144,8 +144,8 @@ const Navbar = (props) => {
             </li>
           </ul>
         </Fade>
-      </div>
-    </div>
+      </aside>
+    </section>
   );
 };
 

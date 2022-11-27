@@ -13,13 +13,13 @@ function App() {
   }
 
   return (
-    <div className={`App text-[#222222] ${darkMode && "text-[#fbfbfd]"}`}>
+    <main className={`App text-[#222222] ${darkMode && "text-[#fbfbfd]"}`}>
       <Navbar darkMode={darkMode} />
       <Home darkMode={darkMode} light={changeLighting} />
       <About darkMode={darkMode} />
       <Work darkMode={darkMode} />
       <Contact darkMode={darkMode} />
-    </div>
+    </main>
   );
 }
 

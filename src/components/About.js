@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 const About = (props) => {
   return (
-    <div
+    <section
       name="about"
       className={`w-full flex py-28 items-center relative z-10 xl:min-h-screen flex-col md:flex-row bg-[#fbfbfd] ${
         props.darkMode && "bg-[#2A2A2A]"
@@ -12,20 +12,22 @@ const About = (props) => {
     >
       {/* container */}
       <Fade triggerOnce={true}>
-        <div className="mx-auto w-10/12 2xl:w-[80%] h-full">
+        <section className="mx-auto w-10/12 2xl:w-[80%] h-full">
           <div className="flex flex-col lg:flex-row w-full h-full">
             {/* item 1 */}
-            <div className="basis-1/2 pb-10 lg:pr-20 lg:pb-0 md:px-6 md:self-center xl:pl-20">
+            <article className="basis-1/2 pb-10 lg:pr-20 lg:pb-0 md:px-6 md:self-center xl:pl-20">
               <img src={bryce} alt="bryce canyon in utah" />
-            </div>
+            </article>
             {/* item 2 */}
-            <div className="basis-1/2 lg:pr-20 md:self-center mx-auto xl:pl-20">
-              <h3 className="font-semibold text-2xl md:text-xl lg:text-xl 2xl:text-4xl uppercase mb-2 VollkornSC">
-                About
-              </h3>
-              <h2 className="font-bold text-3xl md:text-2xl lg:text-2xl 2xl:text-5xl mb-6 VollkornSC">
-                a little introduction
-              </h2>
+            <article className="basis-1/2 lg:pr-20 md:self-center mx-auto xl:pl-20">
+              <header>
+                <h3 className="font-semibold text-2xl md:text-xl lg:text-xl 2xl:text-4xl uppercase mb-2 VollkornSC">
+                  About
+                </h3>
+                <h2 className="font-bold text-3xl md:text-2xl lg:text-2xl 2xl:text-5xl mb-6 VollkornSC">
+                  a little introduction
+                </h2>
+              </header>
               <p className="leading-relaxed max-w-prose text-sm 2xl:text-[1rem] font-[Vollkorn]">
                 Hi! My name is Jieun, and I am a frontend developer. I was born
                 in Korea, raised in America, and now living in Sweden since
@@ -46,7 +48,7 @@ const About = (props) => {
                 happy that I finally get to pursue and dive deeper into what I
                 am truly passionate about.
               </p>
-              <div className="leading-relaxed max-w-prose text-sm 2xl:text-[1rem] font-[Vollkorn] flex flex-col w-full">
+              <article className="leading-relaxed max-w-prose text-sm 2xl:text-[1rem] font-[Vollkorn] flex flex-col w-full">
                 <p className="pb-2 text-sm">
                   Some of the technologies I've been using recently:
                 </p>
@@ -59,12 +61,12 @@ const About = (props) => {
                   <li className="w-[7rem]">Tailwind</li>
                   <li className="w-[7rem]">Bootstrap</li>
                 </ul>
-              </div>
-            </div>
+              </article>
+            </article>
           </div>
-        </div>
+        </section>
       </Fade>
-    </div>
+    </section>
   );
 };
 

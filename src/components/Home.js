@@ -5,13 +5,13 @@ import { Fade } from "react-awesome-reveal";
 
 const Home = (props) => {
   return (
-    <div
+    <section
       name="home"
       className={`w-full h-screen sticky top-0 flex justify-center items-center bg-white ${
         props.darkMode && "bg-[#222222]"
       }`}
     >
-      <div className="mx-auto w-10/12 2xl:w-[80%] font-[Vollkorn] flex flex-col justify-center items-center">
+      <article className="mx-auto w-10/12 2xl:w-[80%] font-[Vollkorn] flex flex-col justify-center items-center">
         <Fade
           cascade
           delay={1500}
@@ -52,8 +52,8 @@ const Home = (props) => {
             />
           </h3>
         </Fade>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Contact = (props) => {
   return (
-    <div
+    <section
       name="contact"
       className={`w-full flex flex-col py-28 items-center relative z-10 xl:min-h-screen md:flex-row bg-white ${
         props.darkMode && "bg-[#2a2a2a]"
@@ -13,10 +13,10 @@ const Contact = (props) => {
     >
       {/* container */}
       <Fade triggerOnce={true}>
-        <div className="mx-auto w-10/12 2xl:w-[80%] h-full">
+        <section className="mx-auto w-10/12 2xl:w-[80%] h-full">
           <div className="flex flex-col lg:flex-row h-full w-full">
             {/* item */}
-            <div className="basis-1/2 lg:pr-20 md:self-center mx-auto xl:pl-20">
+            <article className="basis-1/2 lg:pr-20 md:self-center mx-auto xl:pl-20">
               <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl 2xl:text-4xl uppercase mb-2 VollkornSC">
                 Contact
               </h3>
@@ -66,18 +66,18 @@ const Contact = (props) => {
                   <RiSendPlaneFill className="hover:rotate-[45deg] duration-100 ease-in-out" />
                 </button>
               </form>
-            </div>
+            </article>
             {/* item */}
-            <div className="basis-1/2 md:px-6 md:self-center xl:pl-20">
+            <article className="basis-1/2 md:px-6 md:self-center xl:pl-20">
               <img
                 src={grandCanyon}
                 alt="jieun sitting at a cliff edge at grand canyon"
               />
-            </div>
+            </article>
           </div>
-        </div>
+        </section>
       </Fade>
-    </div>
+    </section>
   );
 };
 

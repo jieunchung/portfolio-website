@@ -55,17 +55,17 @@ const Work = (props) => {
     },
   ];
   return (
-    <div
+    <section
       name="work"
       className={`w-full flex lg:flex-col items-center py-28 relative z-10 xl:min-h-screen flex-row bg-white ${
         props.darkMode && "bg-[#222222]"
       } font-[Vollkorn]`}
     >
       {/* container */}
-      <div className="mx-auto w-10/12 2xl:w-[80%]">
+      <article className="mx-auto w-10/12 2xl:w-[80%]">
         {/* description */}
         <div className="h-full w-full">
-          <div className="md:self-center mx-auto">
+          <header className="md:self-center mx-auto">
             <Fade cascade damping={0.3} triggerOnce={true}>
               <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl 2xl:text-4xl uppercase mb-2 VollkornSC">
                 Work
@@ -74,7 +74,7 @@ const Work = (props) => {
                 recent projects
               </h2>
             </Fade>
-          </div>
+          </header>
         </div>
         {/* works */}
         <Fade cascade damping={0.2} direction="up" triggerOnce={true}>
@@ -109,8 +109,8 @@ const Work = (props) => {
             })}
           </ul>
         </Fade>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 
