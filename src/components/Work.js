@@ -5,6 +5,13 @@ import { Fade } from "react-awesome-reveal";
 const Work = (props) => {
   const Works = [
     {
+      title: "Typenotes",
+      url: "https://chipper-fairy-65d0f5.netlify.app/",
+      description:
+        "Typenotes is a markdown supported note app, which helps you to write your note in a clean format. Available in both light & dark mode.",
+      technologies: "React TSX Tailwind react-router",
+    },
+    {
       title: "Tenzies",
       url: "https://ephemeral-lolly-e84e7e.netlify.app/",
       description:
